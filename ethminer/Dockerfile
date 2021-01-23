@@ -11,7 +11,7 @@ RUN apt-get update && \
 
 WORKDIR /ethminer-repo
 ARG BRANCH=master
-RUN git clone -b ${BRANCH} https://github.com/ethereum-mining/ethminer.git . && \
+RUN git clone -b ${BRANCH} https://github.com/etclabscore/ethminer.git . && \
     git submodule update --init --recursive
 RUN mkdir build && \
     cd build && \
